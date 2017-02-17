@@ -21,12 +21,7 @@ var guessesLeft = 9;
      document.querySelector("#guesses-so-far").innerHTML = guessedLetters.join(", ");
    };
 
-var html = "<h1>The Psychic Game</h1>" + 
-	"<p>Guess what letter I'm thinking of?</p>" + 
-	"<p>Wins: " + wins + "</p>" + 
-	"<p>Losses: " + losses + "</p>";
 
-	document.querySelector(".container").innerHTML = html;
 
 
 var reset = function() 
@@ -76,7 +71,12 @@ document.onkeyup = function(event) {
 		}
 		
 
-	
+	var html = "<h1>The Psychic Game</h1>" + 
+	"<p>Guess what letter I'm thinking of?</p>" + 
+	"<p>Wins: " + wins + "</p>" + 
+	"<p>Losses: " + losses + "</p>";
+
+	document.querySelector(".container").innerHTML = html;
 
 
 
