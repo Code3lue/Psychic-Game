@@ -47,13 +47,15 @@ document.onkeyup = function(event) {
 
 		if (psychicLetters === choices) {
 				wins++;
-				reset();
 				document.querySelector("#wins").innerHTML = wins;
+				alert("Impressive!")
+				reset();
 			}
 
 		if (guessesLeft === 0) {
 			losses++;
 			document.querySelector("#losses").innerHTML = losses;
+			alert("Better Luck Next Time!")
 			reset();
 			
 		}
